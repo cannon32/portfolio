@@ -1,0 +1,13 @@
+<nav class='header navbar navbar-expand-sm navbar-dark {{if indexPage 'fixed-top' 'nav-background'}}'>
+  {{link-to 'NDCannon' 'index' class='navbar-brand'}}
+  <button class='navbar-toggler' type='button' data-toggle='collapse' data-target='#nav-options'>
+    <span class='navbar-toggler-icon'></span>
+  </button>
+  <div class='collapse navbar-collapse' id='nav-options'>
+    <ul class='navbar-nav ml-auto'>
+      <li class='nav-item'>{{link-to 'About Me' 'about-me' class='nav-link'}}</li>
+      <li class='nav-item'>{{link-to 'Projects' 'projects' class='nav-link'}}</li>
+      <li class='nav-item'>{{link-to 'Resume' 'resume' class='nav-link'}}</li>
+    </ul>
+  </div>
+</nav>
