@@ -1,0 +1,130 @@
+$theme-colors: (
+  'primary': #009FEA
+);
+
+@import 'ember-cli-bootstrap-4/bootstrap';
+
+body {
+  height: 100vh;
+}
+
+.ember-view, .home, .index {
+  height: 100%;
+}
+
+.home {
+  background-image: url('images/pinball-background.jpg');
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+.pages {
+  background: #F9F9F9;
+  color: #424242;
+  min-height: 100%;
+}
+
+.index {
+  position: relative;
+}
+
+.index-text {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  h1 {
+    font-size: 3em;
+  }
+}
+
+nav.nav-background {
+  background-color: #424242;
+
+  .navbar-brand {
+    font-size: 2em;
+  }
+}
+
+.content {
+  background-color: #F9F9F9;
+  color: black;
+  margin: 50px 0;
+}
+
+.about-me {
+  .profile-pic {
+    width: 100%;
+  }
+}
+
+.resume {
+  .resume-download {
+    text-align: right;
+  }
+
+  .resume-img {
+    max-width: 100%;
+  }
+}
+
+.projects {
+  .coming-soon {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 1.5em;
+  }
+}
+
+.footer {
+  font-size: .5em;
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .index-text {
+    h1 {
+      font-size: 4em;
+    }
+
+    p {
+      font-size: 1em;
+    }
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .index-text {
+    h1 {
+      font-size: 6em;
+    }
+
+    p {
+      font-size: 1.5em;
+    }
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .index-text {
+    h1 {
+      font-size: 8em;
+    }
+
+    p {
+      font-size: 2em;
+    }
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+
+}
